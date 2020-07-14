@@ -1,16 +1,13 @@
 package com.mingyu1285.gamer;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Application;
 import android.content.Context;
-import android.os.Bundle;
 
 import com.kakao.auth.IApplicationConfig;
 import com.kakao.auth.KakaoAdapter;
 import com.kakao.auth.KakaoSDK;
 
-public class LoginActivity extends Application {
+public class MyApplication extends Application {
 
     @Override
     public void onCreate() {
@@ -23,7 +20,7 @@ public class LoginActivity extends Application {
                 return new IApplicationConfig() {
                     @Override
                     public Context getApplicationContext() {
-                        return LoginActivity.this;
+                        return MyApplication.this;
                     }
                 };
             }
