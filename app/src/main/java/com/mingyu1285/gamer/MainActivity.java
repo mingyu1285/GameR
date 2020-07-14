@@ -3,6 +3,8 @@ package com.mingyu1285.gamer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -81,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(MeV2Response result) {
-                Toast.makeText(MainActivity.this, "12314", Toast.LENGTH_SHORT).show();
                 UserAccount userAccount = result.getKakaoAccount();
                 if (userAccount==null) return;
 
@@ -98,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
 
                 tvName.setText(nickName);
                 Glide.with(MainActivity.this).load(imgUrl).into(iv);
+
+                Intent intent = new Intent()
             }
         });
     }
@@ -131,7 +134,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickLogout(View view){
-
         UserManagement.getInstance().requestLogout(new LogoutResponseCallback() {
             @Override
             public void onCompleteLogout() {
@@ -139,4 +141,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

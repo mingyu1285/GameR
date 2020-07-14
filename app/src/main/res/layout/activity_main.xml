@@ -153,7 +153,7 @@
             android:id="@+id/iv"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/profile"
             android:layout_below="@+id/ratingBar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp" />
@@ -170,7 +170,7 @@
            android:id="@+id/tv_name"
            android:layout_centerHorizontal="true"
            android:layout_marginTop="10dp"
-           android:text="Nickname"
+           android:text="이름"
            android:textSize="25sp"
            android:textColor="#ff000000"
            android:textStyle="bold"/>
@@ -178,7 +178,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="이메일"
+            android:text="Email"
             android:id="@+id/tv_email"
             android:layout_below="@+id/tv_name"
             android:layout_centerHorizontal="true"
@@ -198,11 +198,9 @@
             android:layout_below="@id/login"
             android:layout_alignRight="@id/login"
             android:backgroundTint="#F6F627"
-            android:text="Logout"
+            android:text="로그아웃"
             android:onClick="clickLogout"/>
 
-
-        
         
     </RelativeLayout>
 
