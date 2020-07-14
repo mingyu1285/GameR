@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         tvName = findViewById(R.id.tv_name);
         iv = findViewById(R.id.iv);
 
+        Session.getCurrentSession().addCallback(sessionCallback);
+
 
     }
 
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "로그인 세션연결 성공", Toast.LENGTH_SHORT).show();
 
             //로그인 된 사용자의 정보들 얻어오기
+            requestUserInfo();
         }
 
         @Override
@@ -78,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(MeV2Response result) {
+                Toast.makeText(MainActivity.this, "12314", Toast.LENGTH_SHORT).show();
                 UserAccount userAccount = result.getKakaoAccount();
                 if (userAccount==null) return;
 

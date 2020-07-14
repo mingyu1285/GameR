@@ -153,10 +153,10 @@
             android:id="@+id/iv"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/profile"
+            android:src="@mipmap/ic_launcher"
             android:layout_below="@+id/ratingBar"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp" />
 
     </RelativeLayout>
 
