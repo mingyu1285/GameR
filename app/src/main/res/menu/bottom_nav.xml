@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_game"
+        android:title="게임"
+        android:icon="@drawable/ic_games_black_24dp"/>
+
+    <item
+        android:id="@+id/menu_video"
+        android:title="영상"
+        android:icon="@drawable/ic_videocam_black_24dp" />
+    <item android:id="@+id/menu_ranking"
+        android:title="랭킹"
+        android:icon="@drawable/ic_ranking_asset_black_24dp"/>
+    <item android:id="@+id/menu_category"
+        android:title="카테고리"
+        android:icon="@drawable/ic_category_black_24dp"/>
+    <item android:id="@+id/menu_mypage"
+        android:title="내 정보"
+        android:icon="@drawable/ic_person_black_24dp"/>
+
+</menu>

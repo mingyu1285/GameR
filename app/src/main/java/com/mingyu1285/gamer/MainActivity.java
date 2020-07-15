@@ -81,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(MeV2Response result) {
-                Toast.makeText(MainActivity.this, "12314", Toast.LENGTH_SHORT).show();
                 UserAccount userAccount = result.getKakaoAccount();
                 if (userAccount==null) return;
 
