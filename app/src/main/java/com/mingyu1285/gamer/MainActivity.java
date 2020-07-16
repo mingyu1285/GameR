@@ -3,6 +3,7 @@ package com.mingyu1285.gamer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +19,7 @@ import com.bumptech.glide.Glide;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.Session;
 import com.kakao.network.ErrorResult;
+import com.kakao.usermgmt.LoginButton;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.LogoutResponseCallback;
 import com.kakao.usermgmt.callback.MeV2ResponseCallback;
@@ -34,6 +37,9 @@ import static com.kakao.util.helper.Utility.getPackageInfo;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button btn_custom_login;
+    private LoginButton btn_kakao_login;
+
     TextView tvName;
     TextView tvEmail;
     CircleImageView iv;
@@ -50,6 +56,15 @@ public class MainActivity extends AppCompatActivity {
         tvName = findViewById(R.id.tv_name);
         iv = findViewById(R.id.iv);
 
+        btn_custom_login = (Button)findViewById(R.id.btn_custom_login);
+        btn_custom_login.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                btn_kakao_login.performClick();
+            }
+        });
+        btn_kakao_login = (LoginButton)findViewById(R.id.btn_kakao_login);
+
         Session.getCurrentSession().addCallback(sessionCallback);
 
 
@@ -62,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
 
             //로그인 된 사용자의 정보들 얻어오기
             requestUserInfo();
+
+
+
         }
 
         @Override
@@ -97,6 +115,11 @@ public class MainActivity extends AppCompatActivity {
 
                 tvName.setText(nickName);
                 Glide.with(MainActivity.this).load(imgUrl).into(iv);
+
+                Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
+                startActivity(intent);
+
+
             }
         });
     }
@@ -137,5 +160,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "로그아웃 완료", Toast.LENGTH_SHORT).show();
             }
         });
+
+        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+        startActivity(intent);
     }
+
 }

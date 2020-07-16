@@ -13,6 +13,8 @@
         android:theme="@style/AppTheme"
         android:name=".MyApplication">
 
+        <activity android:name=".FragmentActivity"/>
+
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
