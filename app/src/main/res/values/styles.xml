@@ -3,16 +3,23 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#ff222222</item>
+        <item name="colorPrimaryDark">#555555</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
 
        <item name="android:windowBackground">@drawable/redgun1</item>
-
    </style>
+
+   <style name="AppTheme.AppBar">
+        <item name="titleTextColor">#ffffffff</item>
+        <item name="subtitleTextColor">#ffffffff</item>
+        <item name="colorControlNormal">#ffffffff</item>
+    </style>
+
+
 
 
 

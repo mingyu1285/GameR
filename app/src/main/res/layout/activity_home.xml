@@ -25,4 +25,5 @@
         android:id="@+id/bottom_nav"
         android:background="#E4E6C9"/>
 
+
 </LinearLayout>

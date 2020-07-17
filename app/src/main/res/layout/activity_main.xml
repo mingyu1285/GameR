@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E8E3D4"
+    android:background="#ECE7DA"
     tools:context=".MainActivity">
 
 
@@ -199,6 +199,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/tv_email"
+            android:layout_marginTop="20dp"
             android:background="#ffff00"
             android:text="카카오톡 계정으로 로그인하기"
             android:textSize="20sp" />
