@@ -21,8 +21,6 @@ public class GameTab extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
     }
+}
 
 //대량의 Data를 추가
-
-
-}
