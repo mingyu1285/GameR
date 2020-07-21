@@ -1,7 +1,6 @@
 package com.mingyu1285.gamer;
 
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 public class GameTab extends AppCompatActivity {
 
     ArrayList<GameList> gameLists = new ArrayList<>();
-    MyAdapter adapter;
+    GameListAdapter adapter;
     ListView listView;
 
     @Override
@@ -36,7 +35,7 @@ public class GameTab extends AppCompatActivity {
         gameLists.add(new GameList("배틀필드","《배틀필드》(Battlefield) 시리즈는 윈도/맥 OS 용 게임 배틀필드 1942 발매를 시작으로 한 1인칭 슈팅 게임 시리즈로 첫 작품은 스웨덴 기업 EA 디지털 일루션 CE이 개발하고 일렉트로닉 아츠가 발매했다. 배틀필드의 다른 1인칭 슈팅 게임과 다른 특징으로는 넒은 맵, 팀워크를 요구하고 탈 것이 있다는 점이 있다.",R.drawable.battlefield));
 
         LayoutInflater inflater = getLayoutInflater();
-        adapter = new MyAdapter(gameLists, inflater);
+        adapter = new GameListAdapter(gameLists, inflater);
 
         listView = findViewById(R.id.listview);
 

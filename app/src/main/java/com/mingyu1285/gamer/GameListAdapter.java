@@ -9,12 +9,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends BaseAdapter {
+public class GameListAdapter extends BaseAdapter {
 
     ArrayList<GameList> gameLists;
     LayoutInflater inflater;
 
-    public MyAdapter(ArrayList<GameList> gameLists, LayoutInflater inflater) {
+    public GameListAdapter(ArrayList<GameList> gameLists, LayoutInflater inflater) {
         this.gameLists = gameLists;
         this.inflater = inflater;
     }
