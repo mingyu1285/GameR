@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="게임 요약 설명글"
-            android:textSize="13sp"
+            android:textSize="10sp"
             android:textColor="#555555"
             android:layout_below="@+id/gameTitle"
             android:layout_toRightOf="@+id/imageView"
