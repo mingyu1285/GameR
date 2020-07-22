@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 public class VideoTab2 extends Fragment {
@@ -15,6 +16,9 @@ public class VideoTab2 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.video_tab2, container, false);
+
+        Toolbar toolbar= view.findViewById(R.id.toolbar);
+        ((FragmentActivity)getActivity()).setSupportActionBar(toolbar);
 
         return view;
     }
