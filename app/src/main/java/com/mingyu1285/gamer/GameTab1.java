@@ -37,6 +37,7 @@ public class GameTab1 extends Fragment {
         drawerLayout= (DrawerLayout)view;
         Toolbar toolbar= view.findViewById(R.id.toolbar);
         ((FragmentActivity)getActivity()).setSupportActionBar(toolbar);
+        ((FragmentActivity)getActivity()).getSupportActionBar().setTitle("장르별 게임");
 
        adapter = new GameTabAdapter(getChildFragmentManager());
        tabLayout = view.findViewById(R.id.layout_tab);
