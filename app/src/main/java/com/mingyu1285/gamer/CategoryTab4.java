@@ -19,6 +19,7 @@ public class CategoryTab4 extends Fragment{
 
         Toolbar toolbar= view.findViewById(R.id.toolbar);
         ((FragmentActivity)getActivity()).setSupportActionBar(toolbar);
+        ((FragmentActivity)getActivity()).getSupportActionBar().setTitle("카테고리");
 
         return view;
     }

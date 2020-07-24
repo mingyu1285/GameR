@@ -19,6 +19,7 @@ public class MyPageTab5 extends Fragment {
 
         Toolbar toolbar= view.findViewById(R.id.toolbar);
         ((FragmentActivity)getActivity()).setSupportActionBar(toolbar);
+        ((FragmentActivity)getActivity()).getSupportActionBar().setTitle("마이페이지");
 
         return view;
     }

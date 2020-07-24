@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:src="@drawable/pubg1"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/gameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GameTitle"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/gameExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게임 요약 설명글"
+            android:textSize="10sp"
+            android:textColor="#555555"
+            android:layout_below="@+id/gameTitle"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_margin="4dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
