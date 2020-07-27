@@ -42,7 +42,7 @@ public class RankingTab3 extends Fragment {
 
         Toolbar toolbar= view.findViewById(R.id.toolbar);
         ((FragmentActivity)getActivity()).setSupportActionBar(toolbar);
-        ((FragmentActivity)getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
+        ((FragmentActivity)getActivity()).getSupportActionBar().setTitle("게임 랭킹");
 
 
 

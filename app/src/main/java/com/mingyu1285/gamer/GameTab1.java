@@ -83,12 +83,6 @@ public class GameTab1 extends Fragment {
             }
         });
 
-
-
-
-
-
-
         return view;
     }
 

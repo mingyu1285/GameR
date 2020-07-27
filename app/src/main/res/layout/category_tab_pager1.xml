@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <Button
+        android:id="@+id/game_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="장르별 게임 보기"
+        android:backgroundTint="#E1DE70"/>
+
+    <Button
+        android:id="@+id/volum_at_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가격대별"
+        android:layout_below="@+id/game_genre"
+        android:backgroundTint="#E1DE70"/>
+
+    <Button
+        android:id="@+id/game_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="게임 회사별"
+        android:layout_below="@+id/volum_at_price"
+        android:backgroundTint="#E1DE70"/>
+
+
+
+
+
+</RelativeLayout>
