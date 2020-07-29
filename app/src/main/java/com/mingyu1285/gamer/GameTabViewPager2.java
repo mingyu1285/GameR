@@ -25,7 +25,7 @@ public class GameTabViewPager2 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.game_tab_pager2, container, false);
 
-        gameLists.add(new GameList("메이플스토리리","위젯 스튜디오에서 제작고 넥슨 코리아가 서비스하는 세계 최초의 2D 사이드 스크롤 방식 온라인 게임이다. 전 세계 9개국 이상에서 서비스 되고 있으며, 약 13억 명 이상의 사용자가 가입되어 있다. 또 책으로도 코믹 메이플스토리라는 이름으로 만들어졌다.",R.drawable.maplestory ));
+        gameLists.add(new GameList("메이플스토리","위젯 스튜디오에서 제작고 넥슨 코리아가 서비스하는 세계 최초의 2D 사이드 스크롤 방식 온라인 게임이다. 전 세계 9개국 이상에서 서비스 되고 있으며, 약 13억 명 이상의 사용자가 가입되어 있다. 또 책으로도 코믹 메이플스토리라는 이름으로 만들어졌다.",R.drawable.maplestory ));
         gameLists.add(new GameList("던전앤파이터","《던전 앤 파이터》(Dungeon & Fighter)는 네오플에서 제작하고 넥슨과 네이버에서 서비스하는 온라인 액션 RPG이다.2018년 5월 20일 현재, 전 세계적으로 6억 명 이상의 사용자가 가입되어 있다. 중국 텐센트가 2016년부터 10년간 계약으로 퍼블리싱중이다.",R.drawable.dungeonandfighter));
         gameLists.add(new GameList("파이널판타지","《파이널 판타지》(Final Fantasy, ファイナルファンタジー, 약칭 FF)는 일본 스퀘어 에닉스 (전 스퀘어 (일본의 기업)|스퀘어)사가 소유하고 개발하는 미디어 프랜차이즈이다. 프랜차이즈의 중심은 컴퓨터 롤플레잉 게임 시리즈로, 게임 외에도 영화, 애니메이션, 소설, 만화 등의 상품으로 제작되었다.",R.drawable.finalfantasy));
         gameLists.add(new GameList("리니지","《리니지》는 엔씨소프트에서 제작한 중세 판타지 다중역할수행목적게임다. 만화가 신일숙의 동명 만화 《리니지》가 원작이며, 1998년 9월부터 정식 서비스를 시작. 지금 오랫동안 서비스 되고 있다.",R.drawable.lineage));

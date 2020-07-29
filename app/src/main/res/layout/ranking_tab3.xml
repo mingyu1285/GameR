@@ -31,8 +31,20 @@
             android:text="실시간 인기 게임 차트"
             android:textColor="#ff000000"
             android:textSize="22sp" />
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        
+
+
+
 
     </LinearLayout>
+
 
 
     <com.google.android.material.navigation.NavigationView
